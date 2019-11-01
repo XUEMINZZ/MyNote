@@ -1,16 +1,15 @@
-# 如下操作在linux上操作總結
+# 如下操作在linux上操作总结
 -----------------------------
-## git add filename 
-### 向本地倉庫添加文件
-## git commtit -F "comments"
-### 提交文件，並添加備註信息
-## 用awk 提取提交的信息：
-### git log查看提交的信息
-### git log | awk '{print ...}'  輸出語法
-### NR---行 $後面跟數字表示列
-### git log | awk 'NR==1{print $1}'輸出git log 裏面第一行第一列的字段
-## 自定義函數提取git log 裏面的信息 
-### 
+## 1.git add filename 
+### 本地仓库添加文件
+## 2.git commtit -F "comments"
+### 提交文件，并备注信息
+## 3.用awk 提取提交的信息：
+###  3.1 git log查看提交的信息
+###      NR---行 $后面跟数字表示列号
+###      git log | awk 'NR==1{print $1}'输出git log 里面第一行第一列的字段
+##   3.2 自定义函数提取git log里面的信息
+
 ```shell
 git log | awk '
 {myfun();} 
