@@ -18,3 +18,9 @@ function myfun(){
 }
 '
 ```
+## 4.列出所有分支
+     git branch -a
+## 5.创建test分支
+     git branch test
+## 6.切换到test分支
+     git checkout test
